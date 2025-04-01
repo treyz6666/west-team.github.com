@@ -1,0 +1,158 @@
+* {
+    user-select: none;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    font-family: Montserrat;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    padding: 10px; 
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 17px;
+}
+nav a.main {
+  
+    margin-right: 90px;
+}
+nav a.recom {
+    font-weight: 600;
+}
+
+nav a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin: 35px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons img:hover {
+    opacity: 0.7;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content, .process, .why {
+    opacity: 0;
+    transform: translateY(20px); 
+}
+
+.content.visible, .process.visible, .why.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    user-select: none;
+}
+
+#burger-toggle {
+    display: none;
+}
+.hero {
+    margin-top: 50px;
+    background-image: url('svj/servicebg.svg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay h1 {
+    background: none;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    font-size: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    max-width: 63%;
+    flex: 1;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 85%;
+    font-family: Montserrat;
+}
+
+.hero p {
+    margin-top: 30px;
+    font-size: 19px;
+    max-width: 541px;
+}
